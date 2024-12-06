@@ -103,3 +103,10 @@ if option == "Hasil Clustering":
     st.plotly_chart(fig)
     st.subheader("Hasil Clustering")
     st.write(df.groupby('Cluster').mean())
+
+    st.write("""
+    ### Kesimpulan
+    Dari hasil clustering, dapat disimpulkan bahwa pengeluaran tertinggi terdapat pada cluster ke-2. Pada cluster ini, rata-rata pelanggan berusia sekitar 32 tahun, dengan pendapatan tahunan sebesar 86.5385 dan pengeluaran rata-rata sebesar 82.1288, yang merupakan nilai pengeluaran tertinggi dibandingkan cluster lainnya, diumur ini biasanya sudah berkeluarga dan memiliki satu anak.
+
+    Pengeluaran tertinggi berikutnya terdapat pada cluster ke-6, dengan rata-rata pengeluaran sebesar 76.9167. Pelanggan pada cluster ini memiliki rentang usia sekitar 25 tahun, yang umumnya merupakan fresh graduate yang baru memulai karir di dunia kerja. 
+    """)
